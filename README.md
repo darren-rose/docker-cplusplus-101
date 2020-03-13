@@ -4,15 +4,15 @@
 
 build base image
 ```
-docker build -t cpp-build-base:0.1.0 -f DockerfileBase .
+docker build -t cpp-build-base -f DockerfileBase .
 ```
 
 build image
 ```
-docker build -t hello-world:1.0.0 -f DockerfileProd .
+docker build -t hello-world -f DockerfileProd .
 ```
 
 run
 ```
-docker run --rm -it hello-world:1.0.0
+docker run --rm -it hello-world
 ```
